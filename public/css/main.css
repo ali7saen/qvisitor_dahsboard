@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-ExtraLight.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-Light.woff') format('woff'),
+        url('../../fonts/BahijTheSansArabic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-Plain.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-Bold.woff2') format('woff2'),
+        url('../../fonts/BahijTheSansArabic-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij';
+    src: url('../../fonts/BahijTheSansArabic-ExtraBold.woff') format('woff'),
+        url('../../fonts/BahijTheSansArabic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bbc-nassim';
+    src: url('../../fonts/bbcNassim-bold.woff') format('woff'),
+        url('../../fonts/bbcNassim-bold.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bbc-nassim';
+    src: url('../../fonts/bbcNassim-regular.woff') format('woff'),
+        url('../../fonts/bbcNassim-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bahij", sans-serif;
+    position: relative;
+}
+
+p {
+    margin: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* partials style */
+.pagination .page-link {
+    cursor: pointer;
+}
+
+
+.lading-spinner-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.558);
+}
+
+.lading-spinner-container .spinner-border {
+    width: 50px;
+    height: 50px;
+}
+
+.hide {
+    display: none;
+}

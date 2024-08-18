@@ -1,0 +1,16 @@
+{"level":"error","time":"2024-08-17T14:05:40.522Z","pid":27496,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:05:43.092Z","pid":27496,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:07.071Z","pid":14560,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:27.533Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:32.569Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:35.814Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:36.359Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:37.013Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:37.206Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:08:45.883Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:01.324Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:02.172Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:20.316Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:20.897Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:21.110Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}
+{"level":"error","time":"2024-08-17T14:09:44.152Z","pid":10348,"hostname":"DESKTOP-TST8IQ8","method":"POST","url":"/auth/login","ip":"::1","requestType":"WEB"}

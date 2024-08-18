@@ -1,0 +1,72 @@
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/index/get.css">
+
+    <title><%= title %></title>
+    </head>
+    <body dir="rtl">
+        <%- include('../partials/header.ejs') %>
+        <div class="container mt-5">
+          <div id="box-error" class="box-error">
+
+          </div>
+        </div>
+        <div id="question_list" class="question-list container">
+          <% for( let i = 0; i < questions.length; i++ ) { %>
+            <div class="card question-card" style="width: 18rem;">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <h5 class="card-title"><%= questions[i].type %></h5>
+                    <p class="card-text"><%= questions[i].question %></p>
+                  </div>
+                  <div>
+                    <div class="text-success-emphasis p-2 rounded-2 mb-2" style="background-color: var(--bs-success-bg-subtle)"><%= questions[i].choice_1 %></div>
+                  <div class="card mb-3">
+                    <ul class="list-group list-group-flush">
+                      <% if (questions[i].choice_1 != null) { %>
+                        <li class="list-group-item"><%= questions[i].choice_1 %></li>
+                      <% } %>
+                      <% if (questions[i].choice_2 != null) { %>
+                        <li class="list-group-item"><%= questions[i].choice_2 %></li>
+                      <% } %>
+                      <% if (questions[i].choice_3 != null) { %>
+                        <li class="list-group-item"><%= questions[i].choice_3 %></li>
+                      <% } %>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="question_btns">
+                    <a href="/questions/edit/<%= questions[i]._id %>" class="btn btn-primary btn-sm">تعديل</a>
+                    <button onclick="setQuestionIdToDelete('<%= questions[i]._id %>')" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#delete_question">
+                      حذف السؤال
+                    </button>
+                  </div>
+                </div>
+              </div>
+        <% } %>
+        </div>
+
+
+
+        <!-- Modal -->
+      <div class="modal fade" id="delete_question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">هل انت متأكد من انك تريد حذف السؤال ؟</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+              <button type="button" class="btn btn-primary" onclick="deleteThisQuestion()">تأكيد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <%- include('../partials/loading-spinner.ejs') %>
+        <%- include('../partials/pagination.ejs') %>
+        <%- include('../partials/footer.ejs') %>
+        
+      <script src="/js/questions/get.js"></script>
+        

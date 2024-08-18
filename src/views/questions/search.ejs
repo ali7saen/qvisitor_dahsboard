@@ -1,0 +1,39 @@
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/index/get.css">
+
+    <title><%= title %></title>
+    </head>
+    <body dir="rtl">
+        <%- include('../partials/header.ejs') %>
+        <div class="container input-group mt-5">
+            <input id="search-field" type="text" class="form-control" placeholder="بحث في الاسئلة">
+        </div>  
+        <div class="container mt-5">
+            <div id="box-error" class="box-error">
+            </div>
+        </div>
+        <div id="question_list" class="question-list container mt-5">
+        
+        </div>
+
+
+
+    <!-- Modal -->
+      <div class="modal fade" id="delete_question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">هل انت متأكد من انك تريد حذف السؤال ؟</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+              <button type="button" class="btn btn-primary" onclick="deleteThisQuestion()">تأكيد</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="/js/questions/search.js"></script>
+      <%- include('../partials/footer.ejs') %>
+        

@@ -1,0 +1,59 @@
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/questions/import.css">
+
+    <title>
+        <%= title %>
+    </title>
+    </head>
+
+    <body dir="rtl">
+        <%- include('../partials/header.ejs') %>
+
+            <div id="form_container" class="container mt-5">
+                <div id="box-error" class="box-error">
+                </div>
+                <form id="form">
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="excel_file">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">ارسال الملف</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="table_container" class="container mt-4 table_container hide">
+                
+            </div>
+            <div id="buttons_container" class="container mt-5 hide">
+                <div class="d-grid gap-2 mb-3">
+                    <button onclick="sendFileData()" class="btn btn-primary" type="button">ارسال الملف</button>
+                </div>
+                <div class="d-grid gap-2">
+                    <button onclick="window.location.assign('/')" class="btn btn-danger" type="button">الغاء الارسال</button>
+                </div>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="delete_question" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">هل انت متأكد من انك تريد حذف السؤال ؟
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+                            <button type="button" class="btn btn-primary" onclick="deleteThisQuestion()">تأكيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('../partials/loading-spinner.ejs') %>
+            <%- include('../partials/footer.ejs') %>
+            <script src="/js/questions/import.js"></script>

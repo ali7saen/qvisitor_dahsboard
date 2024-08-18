@@ -1,0 +1,51 @@
+
+.dropdown-toggle::after {
+    margin: 0 10px;
+}
+
+.question-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 50px auto;
+}
+
+.question-card {
+    min-height: 300px;
+}
+
+.question-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.question_btns {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.pagination-box {
+    margin: 50px auto;
+}
+
+.modal-header .btn-close {
+    padding: calc(var(--bs-modal-header-padding-y)* 0.5) calc(var(--bs-modal-header-padding-x)* 0.5);
+    margin: 0;
+}

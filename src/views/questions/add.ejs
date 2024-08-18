@@ -1,0 +1,58 @@
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/questions/add.css">
+
+    <title><%= title %></title>
+    </head>
+    <body dir="rtl">
+        <%- include('../partials/header.ejs') %>
+        <div class="container mb-5 mt-5">
+            <div id="box-error" class="box-error">
+
+            </div>
+            <form id="form">
+                <div class="mb-4">
+                    <label for="question" class="form-label">نص السؤال</label>
+                    <input required type="text" class="form-control" id="question">
+                </div>
+                <div class="mb-4">
+                    <label for="question_type" class="form-label">نوع السؤال</label>
+                    <select id="question_type" required class="form-select" aria-label="Default select example">
+                        <option selected value="default">نوع السؤال</option>
+                        <% for(let i = 0; i < questionsTypes.length; i++) { %>
+                            <option value="<%= questionsTypes[i]  %>"><%= questionsTypes[i]  %></option>
+                        <% } %>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="age_group" class="form-label">الفئة العمرية</label>
+                    <select id="age_group" required class="form-select" aria-label="Default select example">
+                        <option selected value="default">الفئة العمرية</option>
+                        <% for(let i = 0; i < questionsAgeGroups.length; i++) { %>
+                            <option value="<%= questionsAgeGroups[i]  %>"><%= questionsAgeGroups[i]  %></option>
+                        <% } %>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="choice_1" class="form-label">الخيار الأول ( الصحيح )</label>
+                    <input required type="text" class="form-control" id="choice_1">
+                </div>
+                <div class="mb-4">
+                    <label for="choice_2" class="form-label">الخيار الثاني</label>
+                    <input type="text" class="form-control" id="choice_2">
+                </div>
+                <div class="mb-4">
+                    <label for="choice_3" class="form-label">الخيار الثالث</label>
+                    <input required type="text" class="form-control" id="choice_3">
+                </div>
+                <div class="mb-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">اضافة السؤال</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <%- include('../partials/loading-spinner.ejs') %>
+        <%- include('../partials/footer.ejs') %>
+        <script src="/js/questions/add.js"></script>
+
+        

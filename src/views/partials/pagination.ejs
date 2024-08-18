@@ -1,0 +1,42 @@
+<div dir="ltr" class="container pagination-box" style="display: flex; align-items: center; justify-content: center;">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <% if (has_next_page) { %>
+                <li class="page-item">
+                    <a class="page-link" href="/questions/?page=<%= nextPage %>">التالي</a>
+                </li>
+            <% }else{ %>
+                <li class="page-item disabled">
+                    <a class="page-link">التالي</a>
+                </li>
+            <%}%>
+            <% if (lastPage !== current_page && nextPage !== lastPage) { %>
+                <li class="page-item"><a class="page-link" href="/questions/?page=<%= lastPage %>"><%= lastPage %></a></li>
+            <% } %>
+
+            <% if (has_next_page) { %>
+                <li class="page-item"><a class="page-link" href="/questions/?page=<%= nextPage %>"><%= nextPage %></a></li>
+            <% } %>
+            
+            <li class="page-item active"><a class="page-link" href="/questions/?page=<%= current_page %>"><%= current_page %></a></li>
+            <% if (hasPrevPage) { %>
+                <li class="page-item"><a class="page-link" href="/questions/?page=<%= prevPage %>"><%= prevPage %></a></li>
+            <% } %>
+            
+            <% if (current_page !== 1 && prevPage !== 1) { %>
+                <li class="page-item"><a class="page-link" href="/questions/?page=1">1</a></li>
+            <% } %>
+
+            <% if (hasPrevPage) { %>
+                <li class="page-item">
+                    <a class="page-link" href="/questions/?page=<%= prevPage %>">السابق</a>
+                </li>
+            <% }else{ %>
+                <li class="page-item disabled">
+                    <a class="page-link">السابق</a>
+                </li>
+            <%}%>
+            
+        </ul>
+    </nav>
+</div>

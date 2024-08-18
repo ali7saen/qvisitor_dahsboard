@@ -1,0 +1,31 @@
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/login/get.css">
+
+    <title><%= title %></title>
+    </head>
+    <body dir="rtl">
+
+        <main class="form-signin w-100 m-auto">
+          <div id="box-error" class="box-error">
+
+          </div>
+            <form id="login-form">
+              <h1 class="h3 mb-3 fw-normal">يرجى تسجيل الدخول</h1>
+          
+              <div class="form-floating">
+                <input required type="text" class="form-control" id="username" placeholder="username">
+                <label for="floatingInput">username</label>
+              </div>
+              <div class="form-floating">
+                <input required type="password" class="form-control" id="password" placeholder="password">
+                <label for="floatingPassword">password</label>
+              </div>
+              <button class="btn btn-primary w-100 py-2" type="submit">تسجيل الدخول</button>
+            </form>
+          </main>
+
+          <%- include('../partials/loading-spinner.ejs') %>
+          <%- include('../partials/footer.ejs') %>
+          <script src="/js/login.js"></script>
+
+        
